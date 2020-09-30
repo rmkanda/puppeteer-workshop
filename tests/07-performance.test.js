@@ -20,7 +20,7 @@ describe("Performance tests", async () => {
     await browser.close();
   });
 
-  it("seo score should be 0.91", async () => {
+  it("seo score should be 100", async () => {
     const browser = await puppeteer.launch({
       headless: true,
       args: [`--remote-debugging-port=${8042}`],
@@ -30,7 +30,7 @@ describe("Performance tests", async () => {
       disableStorageReset: true,
     });
 
-    expect(lighthouseResult.lhr.categories["seo"].score).equals(0.91);
+    expect(lighthouseResult.lhr.categories["seo"].score).equals(100 / 100);
 
     const time_to_interactive =
       lighthouseResult.lhr.audits["interactive"].displayValue;
