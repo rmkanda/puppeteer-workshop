@@ -36,7 +36,7 @@ describe("Performance tests", async () => {
       lighthouseResult.lhr.audits["interactive"].displayValue;
 
     console.log(`Time To Interactive: ${time_to_interactive}`);
-    console.log("Lighthouse metrics", lighthouseResult.lhr.audits);
+    // console.log("Lighthouse metrics", lighthouseResult.lhr.audits);
 
     //Report
     const html = reportGenerator.generateReport(lighthouseResult.lhr, "html");

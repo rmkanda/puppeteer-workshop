@@ -55,7 +55,7 @@ describe("Device Compatablity", async () => {
 
   //TODO: add assertion
   it("Network/CPU Emulation for slow 3G", async () => {
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
     const client = await page.target().createCDPSession();
     const slow3G = {
