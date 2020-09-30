@@ -9,4 +9,3 @@ describe("Addition", () => {
     expect(result).to.be.equal(expectedResult);
   });
 });
-
