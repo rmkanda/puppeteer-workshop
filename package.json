@@ -1,0 +1,32 @@
+{
+  "name": "puppeteer-workshop",
+  "version": "1.0.0",
+  "description": "sample workshop",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "mocha --timeout 0 tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmkanda/puppeteer-workshop.git"
+  },
+  "keywords": [
+    "puppeteer"
+  ],
+  "author": "rmkanda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rmkanda/puppeteer-workshop/issues"
+  },
+  "homepage": "https://github.com/rmkanda/puppeteer-workshop#readme",
+  "engines": {
+    "node": "14.12.0",
+    "npm": "6.14.8"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3",
+    "puppeteer": "^5.3.1"
+  }
+}
