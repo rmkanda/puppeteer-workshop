@@ -5,7 +5,7 @@ const APP_URL = "https://rmkanda.github.io/sample-pwa/";
 
 describe("Home Page", async () => {
   it("check site title", async () => {
-    const browser = await puppeteer.launch({ headless: true, slowMo: 500 });
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
 
     await page.goto(APP_URL, { waitUntil: "networkidle0" });

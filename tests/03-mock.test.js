@@ -7,7 +7,6 @@ describe("Date & Time card", async () => {
   it("check rendering", async () => {
     const browser = await puppeteer.launch({
       headless: true,
-      slowMo: 200,
       args: ["--disable-web-security"],
     });
     const page = await browser.newPage();
