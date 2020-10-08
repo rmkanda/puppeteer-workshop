@@ -59,11 +59,10 @@ describe("Device Compatablity", async () => {
     const page = await browser.newPage();
     const client = await page.target().createCDPSession();
     const slow3G = {
-      // Network connectivity is absent
       offline: false,
-      // Download speed (bytes/s) 50 MB
+      // Download speed (512 kbps)
       downloadThroughput: ((500 * 1024) / 8) * 0.8,
-      // Upload speed (bytes/s) 50 MB
+      // Upload speed (512 kbps)
       uploadThroughput: ((500 * 1024) / 8) * 0.8,
       // Latency 2000 (ms)
       latency: 400 * 5,
