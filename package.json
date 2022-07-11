@@ -28,6 +28,6 @@
     "chai": "^4.3.4",
     "lighthouse": "^8.0.0",
     "mocha": "^8.4.0",
-    "puppeteer": "^10.0.0"
+    "puppeteer": "^15.3.2"
   }
 }
